@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu?.delegate = self
         keysmithStatusItem?.menu = menu
         
-        let titleMenuItem = NSMenuItem(title: "🔐 keysmith v0.1.1", action: nil, keyEquivalent: "")
+        let titleMenuItem = NSMenuItem(title: "🔐 keysmith v1.0.0", action: nil, keyEquivalent: "")
         titleMenuItem.isEnabled = false
         menu?.addItem(titleMenuItem)
         
@@ -33,12 +33,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         openMenuItem.action = #selector(readOnePasswordMetadataFolder)
         openMenuItem.target = self
         menu?.addItem(openMenuItem)
-        
-        menu?.addItem(NSMenuItem.separator())
-            
-        let tutorialMenuItem = NSMenuItem(title: "Make sure to grant permission\nfor keysmith in System Preferences > Security > Accessibility AND Automation.", action: nil, keyEquivalent: "")
-        tutorialMenuItem.isEnabled = false
-        menu?.addItem(tutorialMenuItem)
         
         menu?.addItem(NSMenuItem.separator())
 
@@ -58,60 +52,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
     
-//    let OnePasswordPathComponents = ["Library", "Containers", "com.agilebits.onepassword7", "Data", "Library", "Caches", "Metadata", "1Password"];
-//
-//    let OpenOnePassworldScriptPath = "OpenOnePassword.scpt"
-    
     @objc func readOnePasswordMetadataFolder() -> Bool {
-//        let fileManager = FileManager.default
-//
-//        guard let userUrl = fileManager.urls(for: .userDirectory, in: .allDomainsMask).first else {
-//            return false
-//        }
-//
-//        guard let desktopUrl = fileManager.urls(for: .desktopDirectory, in: .allDomainsMask).first else {
-//            return false
-//        }
-//
-//        guard desktopUrl.pathComponents.count > 2 else {
-//            return false
-//        }
-//
-//        let username = desktopUrl.pathComponents[2]
-//        var url = userUrl.appendingPathComponent(username)
-//
-//        for component in OnePasswordPathComponents {
-//            url = url.appendingPathComponent(component)
-//        }
-//
-//        print(url)
-//        var isDirectory: ObjCBool = false
-//        let fileExists = FileManager.default.fileExists(atPath: url.path, isDirectory: &isDirectory)
-//
-//        if fileExists && isDirectory.boolValue {
-//            print("YES")
-//        } else {
-//            print("NO")
-//        }
-                 
-        
-        
-//        let task = Process()
-//        task.launchPath = "/usr/bin/osascript"
-//
-//        let scriptPath = fileManager.homeDirectoryForCurrentUser.deletingLastPathComponent().appendingPathComponent(OpenOnePassworldScriptPath).absoluteString
-//        task.arguments = [ scriptPath ]
-//        task.launch()
-        
-      
-        
-//        let task = Process()
-//        task.launchPath = "/usr/bin/env"
-//        task.arguments = ["open /Applications/1Password 7.app"]
-//        task.launch()
-//        task.waitUntilExit()
-        
-
         guard let url = URL(string: "onepassword7://view/") else {
             return false
         }
@@ -139,6 +80,4 @@ extension AppDelegate: NSMenuDelegate, NSMenuItemValidation {
     func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
         return true
     }
-    
-
 }
