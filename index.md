@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# keysmith
+🔐  mini 1password statusbar app to save new logins
 
-You can use the [editor on GitHub](https://github.com/SnowcodeDesign/keysmith/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![](https://user-images.githubusercontent.com/951011/91617807-d6e4ce80-e956-11ea-84f8-cbe9896925ad.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Authors
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+(c) 2020 Snowcode, LLC
+Julian (insanj) Weiss
+julian@snowcode.design
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## License
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SnowcodeDesign/keysmith/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+See [LICENSE](LICENSE).
